@@ -2,6 +2,8 @@ import 'package:flutter/material.dart';
 import 'login_page.dart';
 import 'NGO_screen.dart';
 import 'admin_screen.dart';
+import 'investor_screen.dart';
+import 'splash_screen.dart';
 
 void main() {
   runApp(const CarbonApp());
@@ -18,7 +20,7 @@ class CarbonApp extends StatelessWidget {
         useMaterial3: true,
         colorSchemeSeed: Colors.green,
       ),
-      home: const NGOApp(),
+      home: const SplashScreen(),
     );
   }
 }

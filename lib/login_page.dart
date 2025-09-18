@@ -1,6 +1,9 @@
+import 'investor_screen.dart';
 import 'package:flutter/material.dart';
 import 'main.dart'; // Import your existing HomePage file
 import 'upload_screen.dart';
+import 'NGO_screen.dart';
+import 'admin_screen.dart';
 
 class LoginPage extends StatefulWidget {
   const LoginPage({super.key});
@@ -13,6 +16,38 @@ class _LoginPageState extends State<LoginPage> {
   final TextEditingController emailController = TextEditingController();
   final TextEditingController passwordController = TextEditingController();
 
+
+void handleLogin() {
+    final email = emailController.text.trim();
+    final password = passwordController.text.trim();
+
+    // Hard-coded check for demo purposes
+    if (email == "Helookitty123" && password == "admin123") {
+      Navigator.pushReplacement(
+        context,
+        MaterialPageRoute(builder: (context) => const AdminApp()),
+      );
+    } else if (email == "NgoUser" && password == "ngo123") {
+      Navigator.pushReplacement(
+        context,
+        MaterialPageRoute(builder: (context) => const NGOApp()),
+      );
+    } else if (email == "Investor" && password == "invest123") {
+      Navigator.pushReplacement(
+        context,
+        MaterialPageRoute(builder: (context) => const MainScreen()),
+      );
+    }
+    else {
+      ScaffoldMessenger.of(context).showSnackBar(
+        const SnackBar(content: Text("Invalid credentials")),
+      );
+    }
+  }
+
+
+
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -23,10 +58,16 @@ class _LoginPageState extends State<LoginPage> {
             child: Column(
               mainAxisAlignment: MainAxisAlignment.center,
               children: [
-                const Icon(Icons.eco, size: 80, color: Colors.green),
+                Image.asset(
+  'assets/logo.png', // your image path
+  width: 80,
+  height: 80,
+  fit: BoxFit.contain, // keeps aspect ratio
+),
+
                 const SizedBox(height: 16),
                 const Text(
-                  "Blue Carbon Registry",
+                  "Carbon Chain Registry",
                   style: TextStyle(fontSize: 28, fontWeight: FontWeight.bold),
                   textAlign: TextAlign.center,
                 ),
@@ -67,13 +108,7 @@ class _LoginPageState extends State<LoginPage> {
                       borderRadius: BorderRadius.circular(12),
                     ),
                   ),
-                  onPressed: () {
-                    // In a real app, validate login here
-                    Navigator.pushReplacement(
-                      context,
-                      MaterialPageRoute(builder: (context) => const UploadScreen())
-                    );
-                  },
+                  onPressed: handleLogin,
                   child: const Text(
                     "Login",
                     style: TextStyle(fontSize: 18),

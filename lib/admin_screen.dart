@@ -1,3 +1,4 @@
+import 'package:blue_carbon_app/login_page.dart';
 import 'package:flutter/material.dart';
 
 class AdminApp extends StatefulWidget {
@@ -56,30 +57,124 @@ class PendingSurveysScreen extends StatelessWidget {
     ];
 
     return Scaffold(
-      appBar: AppBar(title: const Text('Pending Surveys')),
+      appBar: AppBar(
+        title: const Text(
+          'Pending Surveys',
+          style: TextStyle(fontWeight: FontWeight.bold),
+        ),
+        backgroundColor: Colors.green,
+        foregroundColor: Colors.white,
+        elevation: 2,
+      ),
       drawer: const CommonDrawer(),
-      body: ListView.builder(
-        itemCount: pending.length,
-        itemBuilder: (context, index) {
-          final survey = pending[index];
-          return Card(
-            child: ListTile(
-              title: Text(survey['id']!),
-              subtitle: Text('Status: ${survey['status']}'),
-              trailing: Wrap(
-                spacing: 8,
-                children: [
-                  IconButton(icon: const Icon(Icons.check, color: Colors.green), onPressed: () {}),
-                  IconButton(icon: const Icon(Icons.close, color: Colors.red), onPressed: () {}),
-                ],
+      body: Container(
+        decoration: const BoxDecoration(
+          gradient: LinearGradient(
+            colors: [Color(0xFFE8F5E9), Color(0xFFC8E6C9)],
+            begin: Alignment.topLeft,
+            end: Alignment.bottomRight,
+          ),
+        ),
+        child: pending.isEmpty
+            ? const Center(
+                child: Text(
+                  "No pending surveys 🎉",
+                  style: TextStyle(fontSize: 18, color: Colors.black54),
+                ),
+              )
+            : ListView.builder(
+                padding: const EdgeInsets.all(12),
+                itemCount: pending.length,
+                itemBuilder: (context, index) {
+                  final survey = pending[index];
+                  return Card(
+                    margin: const EdgeInsets.symmetric(vertical: 8),
+                    elevation: 4,
+                    shape: RoundedRectangleBorder(
+                      borderRadius: BorderRadius.circular(16),
+                    ),
+                    child: ListTile(
+                      contentPadding: const EdgeInsets.symmetric(
+                        horizontal: 16,
+                        vertical: 10,
+                      ),
+                      leading: CircleAvatar(
+                        backgroundColor: Colors.green.shade100,
+                        child: const Icon(Icons.assignment, color: Colors.green),
+                      ),
+                      title: Text(
+                        survey['id']!,
+                        style: const TextStyle(
+                          fontSize: 16,
+                          fontWeight: FontWeight.bold,
+                          color: Colors.black87,
+                        ),
+                      ),
+                      subtitle: Text(
+                        'Status: ${survey['status']}',
+                        style: TextStyle(
+                          fontSize: 14,
+                          color: Colors.green.shade700,
+                          fontWeight: FontWeight.w500,
+                        ),
+                      ),
+                      trailing: Wrap(
+                        spacing: 8,
+                        children: [
+                          ElevatedButton.icon(
+                            style: ElevatedButton.styleFrom(
+                              backgroundColor: Colors.green,
+                              shape: RoundedRectangleBorder(
+                                borderRadius: BorderRadius.circular(8),
+                              ),
+                              padding:
+                                  const EdgeInsets.symmetric(horizontal: 8, vertical: 4),
+                            ),
+                            onPressed: () {
+                              ScaffoldMessenger.of(context).showSnackBar(
+                                SnackBar(
+                                  content: Text('${survey['id']} Approved ✅'),
+                                  backgroundColor: Colors.green,
+                                ),
+                              );
+                            },
+                            icon: const Icon(Icons.check, size: 18, color: Colors.white),
+                            label: const Text('Approve',
+                                style: TextStyle(color: Colors.white)),
+                          ),
+                          OutlinedButton.icon(
+                            style: OutlinedButton.styleFrom(
+                              foregroundColor: Colors.red,
+                              side: const BorderSide(color: Colors.red),
+                              shape: RoundedRectangleBorder(
+                                borderRadius: BorderRadius.circular(8),
+                              ),
+                              padding:
+                                  const EdgeInsets.symmetric(horizontal: 8, vertical: 4),
+                            ),
+                            onPressed: () {
+                              ScaffoldMessenger.of(context).showSnackBar(
+                                SnackBar(
+                                  content: Text('${survey['id']} Rejected ❌'),
+                                  backgroundColor: Colors.red,
+                                ),
+                              );
+                            },
+                            icon: const Icon(Icons.close, size: 18),
+                            label: const Text('Reject'),
+                          ),
+                        ],
+                      ),
+                    ),
+                  );
+                },
               ),
-            ),
-          );
-        },
       ),
     );
   }
 }
+
+// Dummy CommonDrawer widget to avoid errors
 
 // ------------------- Projects Screen -------------------
 class AdminProjectsScreen extends StatelessWidget {
@@ -92,18 +187,63 @@ class AdminProjectsScreen extends StatelessWidget {
       {'name': 'Beach Plantation', 'status': 'Rejected'},
     ];
 
+    Color getStatusColor(String status) {
+      switch (status.toLowerCase()) {
+        case 'approved':
+          return Colors.green.shade600;
+        case 'rejected':
+          return Colors.red.shade600;
+        default:
+          return Colors.grey.shade600;
+      }
+    }
+
     return Scaffold(
-      appBar: AppBar(title: const Text('All Projects')),
+      appBar: AppBar(
+        title: const Text(
+          'All Projects',
+          style: TextStyle(fontWeight: FontWeight.bold),
+        ),
+        backgroundColor: Colors.green.shade700,
+        foregroundColor: Colors.white,
+      ),
       drawer: const CommonDrawer(),
-      body: ListView.builder(
-        itemCount: projects.length,
-        itemBuilder: (context, index) {
-          final project = projects[index];
-          return ListTile(
-            title: Text(project['name']!),
-            trailing: Chip(label: Text(project['status']!)),
-          );
-        },
+      body: Padding(
+        padding: const EdgeInsets.all(16.0),
+        child: ListView.builder(
+          itemCount: projects.length,
+          itemBuilder: (context, index) {
+            final project = projects[index];
+            return Card(
+              elevation: 4,
+              shape: RoundedRectangleBorder(
+                borderRadius: BorderRadius.circular(16),
+              ),
+              margin: const EdgeInsets.only(bottom: 12),
+              child: ListTile(
+                contentPadding:
+                    const EdgeInsets.symmetric(horizontal: 16, vertical: 12),
+                title: Text(
+                  project['name']!,
+                  style: const TextStyle(
+                    fontSize: 18,
+                    fontWeight: FontWeight.w600,
+                  ),
+                ),
+                trailing: Chip(
+                  label: Text(
+                    project['status']!,
+                    style: const TextStyle(
+                      color: Colors.white,
+                      fontWeight: FontWeight.bold,
+                    ),
+                  ),
+                  backgroundColor: getStatusColor(project['status']!),
+                ),
+              ),
+            );
+          },
+        ),
       ),
     );
   }
@@ -121,16 +261,57 @@ class CarbonRegistryScreen extends StatelessWidget {
     ];
 
     return Scaffold(
-      appBar: AppBar(title: const Text('Carbon Registry')),
-      body: ListView.builder(
-        itemCount: registry.length,
-        itemBuilder: (context, index) {
-          final entry = registry[index];
-          return ListTile(
-            title: Text('Transaction: ${entry['id']}'),
-            subtitle: Text('Credits: ${entry['credits']}'),
-          );
-        },
+      appBar: AppBar(
+        title: const Text(
+          'Carbon Registry',
+          style: TextStyle(fontWeight: FontWeight.bold),
+        ),
+        backgroundColor: Colors.green.shade700,
+        foregroundColor: Colors.white,
+      ),
+      drawer: const CommonDrawer(),
+      body: Padding(
+        padding: const EdgeInsets.all(16.0),
+        child: ListView.builder(
+          itemCount: registry.length,
+          itemBuilder: (context, index) {
+            final entry = registry[index];
+            return Card(
+              elevation: 4,
+              margin: const EdgeInsets.only(bottom: 12),
+              shape: RoundedRectangleBorder(
+                borderRadius: BorderRadius.circular(16),
+              ),
+              child: ListTile(
+                contentPadding:
+                    const EdgeInsets.symmetric(horizontal: 16, vertical: 12),
+                leading: CircleAvatar(
+                  backgroundColor: Colors.green.shade100,
+                  child: Icon(Icons.eco, color: Colors.green.shade700),
+                ),
+                title: Text(
+                  'Transaction: ${entry['id']}',
+                  style: const TextStyle(
+                    fontWeight: FontWeight.bold,
+                    fontSize: 16,
+                  ),
+                ),
+                subtitle: Text(
+                  'Credits: ${entry['credits']}',
+                  style: TextStyle(
+                    color: Colors.green.shade700,
+                    fontWeight: FontWeight.w600,
+                  ),
+                ),
+                trailing: Icon(Icons.arrow_forward_ios,
+                    color: Colors.green.shade600, size: 16),
+                onTap: () {
+                  // You can add navigation to transaction details here
+                },
+              ),
+            );
+          },
+        ),
       ),
     );
   }
@@ -143,21 +324,68 @@ class ReportsScreen extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(title: const Text('Reports')),
-      body: Center(
-        child: ElevatedButton.icon(
-          onPressed: () {
-            ScaffoldMessenger.of(context).showSnackBar(
-              const SnackBar(content: Text('Report Generated (Dummy)!')),
-            );
-          },
-          icon: const Icon(Icons.download),
-          label: const Text('Generate PDF Report'),
+      appBar: AppBar(
+        title: const Text(
+          'Reports',
+          style: TextStyle(fontWeight: FontWeight.bold),
+        ),
+        backgroundColor: Colors.green.shade700,
+        foregroundColor: Colors.white,
+        elevation: 4,
+      ),
+      drawer: const CommonDrawer(),
+      body: Padding(
+        padding: const EdgeInsets.all(24.0),
+        child: Column(
+          mainAxisAlignment: MainAxisAlignment.center,
+          children: [
+            Icon(Icons.insert_chart_rounded,
+                size: 100, color: Colors.green.shade400),
+            const SizedBox(height: 24),
+            const Text(
+              'Generate Detailed Carbon Reports',
+              style: TextStyle(
+                fontSize: 20,
+                fontWeight: FontWeight.bold,
+              ),
+              textAlign: TextAlign.center,
+            ),
+            const SizedBox(height: 12),
+            Text(
+              'Get a detailed PDF report of your projects, surveys, and carbon credits with just one click.',
+              style: TextStyle(fontSize: 16, color: Colors.grey.shade700),
+              textAlign: TextAlign.center,
+            ),
+            const SizedBox(height: 40),
+            ElevatedButton.icon(
+              onPressed: () {
+                ScaffoldMessenger.of(context).showSnackBar(
+                  const SnackBar(content: Text('Report Generated (Dummy)!')),
+                );
+              },
+              icon: const Icon(Icons.download),
+              label: const Text(
+                'Generate PDF Report',
+                style: TextStyle(fontSize: 16, fontWeight: FontWeight.bold),
+              ),
+              style: ElevatedButton.styleFrom(
+                backgroundColor: Colors.green.shade600,
+                foregroundColor: Colors.white,
+                padding:
+                    const EdgeInsets.symmetric(horizontal: 28, vertical: 14),
+                shape: RoundedRectangleBorder(
+                  borderRadius: BorderRadius.circular(16),
+                ),
+                elevation: 6,
+              ),
+            ),
+          ],
         ),
       ),
     );
   }
 }
+
 
 
 
@@ -215,7 +443,8 @@ class CommonDrawer extends StatelessWidget {
             leading: const Icon(Icons.logout, color: Colors.red),
             title: const Text('Log Out', style: TextStyle(color: Colors.red)),
             onTap: () {
-              Navigator.pushReplacementNamed(context, '/login');
+              Navigator.pushReplacement(context,
+               MaterialPageRoute(builder: (context) => const LoginPage()));
             },
           ),
         ],
