@@ -1,161 +1,182 @@
 # 🌊 **CarbonChain**
-**Empowering Communities, Healing Ecosystems**
+### *Empowering Communities, Healing Ecosystems*
 
 ---
 
-## 💡 Introduction
+## 💡 **Introduction**
 
-**Problem Statement:**  
-Blue carbon ecosystem restoration in India lacks a decentralized, transparent system for **Monitoring, Reporting, and Verification (MRV)** of projects. Existing methods suffer from data tampering, manual validation delays, and limited participation from NGOs and local panchayats, making carbon credit generation unreliable and non-inclusive.
+### **Problem Statement**
+Blue carbon ecosystem restoration in India lacks a decentralized, transparent system for **Monitoring, Reporting, and Verification (MRV)** of projects.  
+Current methods face issues like **data tampering, manual validation delays**, and **limited participation** of NGOs and local panchayats, making carbon credit generation unreliable and inefficient.
 
-**Solution:**  
-**CarbonChain** is a **Blockchain-powered Blue Carbon Registry and MRV system** that ensures transparency, trust, and accountability in coastal restoration. Through a **Flutter-based mobile DApp**, NGOs and local communities can upload **geo-tagged field data, photos, and project details**, stored immutably on the blockchain.  
-AI-assisted validation cross-checks data with **drone/satellite imagery and baseline datasets**, and **NCCR administrators** approve verified projects.  
-Smart contracts then **tokenize verified carbon credits** into community digital wallets. A **transparent marketplace** connects corporates and investors to purchase verified offsets while directly supporting local restoration efforts.  
+### **Solution**
+**CarbonChain** is a **Blockchain-powered Blue Carbon Registry and MRV system** that ensures **transparency, trust, and accountability** in coastal restoration.  
+Through a **Flutter-based mobile DApp**, NGOs and communities can upload **geo-tagged field data, photos, and project details**, which are stored immutably on the blockchain.  
 
-CarbonChain bridges **field-level participation, scientific verification, and blockchain transparency** to make blue carbon restoration measurable, fraud-proof, and impactful.
+AI-assisted validation cross-checks data using **drone/satellite imagery** and baseline datasets, while **NCCR administrators** review and approve projects.  
+Once approved, **smart contracts tokenize verified carbon credits** into community digital wallets. A **transparent marketplace** then enables **corporates and investors** to purchase verified offsets, directly supporting local restoration efforts.  
+
+CarbonChain bridges **field-level participation, scientific verification, and blockchain transparency**, transforming restoration into measurable and fraud-proof impact.
 
 ---
 
 ## 📽️ **Introduction to CarbonChain**
 
-[![Intro to CarbonChain](https://i.postimg.cc/J47DrjVd/Carbon-Chain-Thumbnail.jpg)](https://youtu.be/your-demo-link-here)  
-*Click on the image above to watch our video demonstration.*
+[![Intro to CarbonChain](https://i.postimg.cc/J47DrjVd/Carbon-Chain-Thumbnail.jpg)](https://youtu.be/gH61--pI2jo?feature=shared)  
+*🎥 Click the image above to watch our demo video.*
 
 ---
 
-## 🎯 **Our Target SDG Goals**
+## 🎯 **UN Sustainable Development Goals Supported**
 
 <p align="center">
-  <img src="https://i.postimg.cc/JhWwZ8kB/SDG-13.png" width="180"/>
-  <img src="https://i.postimg.cc/QCwnVtYX/SDG-14.png" width="180"/>
-  <img src="https://i.postimg.cc/W4t6ccZV/SDG-15.png" width="180"/>
+  <img src="https://i.postimg.cc/jqGbSbJB/SDG-13.png" width="180"/>
+  <img src="https://i.postimg.cc/MZcwwTX4/SDG-14.jpg" width="180"/>
+  <img src="https://i.postimg.cc/y6JKKdkq/SDG-15.jpg" width="180"/>
+  <img src="https://i.postimg.cc/kMVCC4Dp/SDG-17.jpg" width="180"/>
 </p>
 
-**SDG-13 (Climate Action):** Accelerating verified carbon sequestration through restoration.  
-**SDG-14 (Life Below Water):** Promoting mangrove and coastal habitat regeneration.  
-**SDG-15 (Life on Land):** Supporting biodiversity and ecosystem recovery through community participation.  
+- **SDG 13 – Climate Action:** Accelerating verified carbon sequestration through blue carbon restoration.  
+- **SDG 14 – Life Below Water:** Promoting mangrove and coastal habitat regeneration.  
+- **SDG 15 – Life on Land:** Enhancing biodiversity and ecosystem recovery.  
+- **SDG 17 – Partnerships for the Goals:** Empowering collaboration between NGOs, corporates, and government bodies.
 
 ---
 
 ## ⚙️ **Setup**
 
-To run the project locally:
+To run this project locally:
 
 git clone https://github.com/your-username/carbonchain
 cd carbonchain
 flutter pub get
 flutter run
-📱 User Guide
-Walkthrough
-<table style="width: 100%;"> <tr> <td align="center" width="25%"> <img src="https://i.postimg.cc/yourimage1.jpg" width="120"/><br> <b>Login Screen</b><br> Login for NGOs, NCCR admins, and investors via Firebase authentication. </td> <td align="center" width="25%"> <img src="https://i.postimg.cc/yourimage2.jpg" width="120"/><br> <b>Data Upload Screen</b><br> NGOs can upload geo-tagged photos, videos, and restoration data. </td> <td align="center" width="25%"> <img src="https://i.postimg.cc/yourimage3.jpg" width="120"/><br> <b>AI Validation Dashboard</b><br> Real-time AI and satellite data validation with anomaly detection. </td> <td align="center" width="25%"> <img src="https://i.postimg.cc/yourimage4.jpg" width="120"/><br> <b>Marketplace</b><br> Corporates can view, verify, and purchase tokenized carbon credits. </td> </tr> </table>
-✨ Highlights
 
-🔗 Blockchain-powered registry ensuring tamper-proof and transparent MRV.
+## 📱 **User Guide**
 
-🤖 AI-driven validation using satellite and drone imagery for restoration tracking.
+### **Walkthrough**
 
-🌍 Inclusive platform onboarding NGOs, panchayats, and coastal communities.
+<table style="width: 100%;">
+  <tr>
+    <td align="center" width="25%">
+      <img src="https://i.postimg.cc/yourimage1.jpg" width="120"/><br>
+      <b>Login Screen</b><br>
+      Role-based login for NGOs, NCCR admins, and investors via Firebase authentication.
+    </td>
+    <td align="center" width="25%">
+      <img src="https://i.postimg.cc/yourimage2.jpg" width="120"/><br>
+      <b>Data Upload Screen</b><br>
+      NGOs can upload geo-tagged photos, videos, and restoration data for verification.
+    </td>
+    <td align="center" width="25%">
+      <img src="https://i.postimg.cc/yourimage3.jpg" width="120"/><br>
+      <b>AI Validation Dashboard</b><br>
+      Real-time validation using satellite imagery and anomaly detection.
+    </td>
+    <td align="center" width="25%">
+      <img src="https://i.postimg.cc/yourimage4.jpg" width="120"/><br>
+      <b>Marketplace</b><br>
+      Corporates can browse, verify, and purchase tokenized carbon credits.
+    </td>
+  </tr>
+</table>
+## ✨ **Highlights**
 
-💰 Tokenized carbon credits via smart contracts and community wallets.
+- 🔗 **Blockchain-powered registry** ensuring tamper-proof and transparent MRV.  
+- 🤖 **AI-driven validation** for restoration tracking through drone/satellite imagery.  
+- 🌍 **Inclusive platform** onboarding NGOs, panchayats, and coastal communities.  
+- 💰 **Tokenized carbon credits** managed through smart contracts and community wallets.  
+- ☁️ **Hybrid storage (IPFS + Firebase)** for scalable and cost-efficient data management.  
+- 💬 **AI-powered chatbot** for NGO and corporate assistance during data submission and tracking.  
 
-☁️ Hybrid storage (IPFS + Firebase) for scalability and reduced blockchain cost.
+---
 
-💬 AI chatbot guiding NGOs and corporates through uploads and credit tracking.
+## 🧠 **Tech Stack**
 
-🧠 Tech Stack
+### **Technologies Used**
+- **Frameworks:** Flutter, Node.js, Firebase  
+- **Blockchain:** Ethereum (Sepolia testnet), Smart Contracts (Solidity)  
+- **AI/ML:** YOLOv8, Gemini API, OpenCV for image analysis  
+- **Storage:** IPFS + Firebase Firestore  
+- **Cloud:** Google Cloud Platform (GCP)  
+- **Integration:** REST APIs, WebSockets, MetaMask  
 
-Technologies Used:
+---
 
+## 🧩 **CarbonChain System Overview**
 
-Frameworks: Flutter, Node.js, Firebase
+1. **Blockchain Integration**  
+   Smart contracts deployed on the Sepolia network handle carbon credit tokenization and ensure immutability.  
 
-Blockchain: Ethereum (Sepolia testnet), Smart Contracts (Solidity)
+2. **AI Verification Layer**  
+   Drone and satellite data analyzed via AI to verify restoration progress and detect anomalies.  
 
-AI/ML: YOLOv8, Gemini API, OpenCV for image analysis
+3. **Flutter Mobile DApp**  
+   User-friendly mobile interface for NGOs, panchayats, and corporates to submit and track data.  
 
-Storage: IPFS + Firebase Firestore
+4. **NCCR Admin Dashboard**  
+   Admins validate AI results, review projects, and approve verified restoration data.  
 
-Cloud: Google Cloud Platform (GCP)
+5. **Carbon Credit Marketplace**  
+   Transparent trading platform enabling corporates and investors to buy verified carbon credits.  
 
-Integration: REST APIs, WebSockets, MetaMask
+6. **Hybrid Storage**  
+   IPFS for media files; blockchain stores metadata and verification hashes for efficiency.  
 
-🧩 CarbonChain System Overview
+7. **Chatbot Integration**  
+   Gemini-powered chatbot provides user assistance, guidance, and real-time updates.  
 
-Blockchain Integration:
-Smart contracts deployed on Sepolia testnet for credit tokenization and immutable records.
+---
 
-AI Verification Layer:
-Drone/satellite data analysis to validate restoration progress and detect anomalies.
+## 🌱 **Impact and Benefits**
 
-Mobile DApp:
-Flutter-based interface enabling NGOs, panchayats, and investors to interact seamlessly.
+### **Potential Impact**
+- Coastal communities gain recognition and visibility for verified restoration efforts.  
+- Corporates access reliable, fraud-proof carbon credits.  
+- NCCR’s workload reduced through AI automation.  
+- Accelerated restoration improves biodiversity and captures measurable carbon.  
 
-Admin Tools (NCCR):
-Dashboard for cross-verification, anomaly detection, and project approvals.
+### **Benefits of the Solution**
+- **Accessibility:** Simple mobile app for NGOs and communities.  
+- **Efficiency:** AI validation accelerates project approval.  
+- **Transparency:** Blockchain ensures data integrity.  
+- **Economic Value:** Generates income for local communities.  
+- **Sustainability:** Hybrid storage cuts cost and improves scalability.  
 
-Carbon Credit Marketplace:
-Transparent trading platform for corporates and investors to purchase verified credits.
+---
 
-Hybrid Storage:
-IPFS for large media files; blockchain for metadata and verification hashes.
+## 📊 **Feasibility and Viability**
 
-Chatbot Integration:
-Gemini-powered chatbot assists users with data uploads, project tracking, and FAQs.
+- **Feasibility:** Technically sound integration of AI and blockchain components.  
+- **Challenges:** Blockchain adoption, connectivity issues, large media storage costs.  
+- **Mitigation Strategies:**  
+  - Training sessions for NGOs and field staff.  
+  - Offline-first mobile design with auto-sync.  
+  - Hybrid storage (IPFS + Firebase) to minimize blockchain overhead.  
+- **Value Proposition:**  
+  Transparent, verifiable carbon credit registry empowering coastal communities and advancing India’s climate goals.  
 
-🌱 Impact and Benefits
-Potential Impact
+---
 
-Communities gain visibility for verified restoration projects.
+## 🔮 **Future Scope**
 
-Corporates access authentic, fraud-proof carbon credits.
+- Integration with **Climate Warehouse** and **Verra** for global credit compliance.  
+- Expansion to **pan-India coastal zones** for large-scale MRV adoption.  
+- Enhancement of **AI models** for improved carbon estimation precision.  
+- Partnerships with **NGOs, NCCR, and research institutions** for real-world deployment.  
 
-NCCR reduces manual workload with AI validation.
+---
 
-Environment benefits through large-scale restoration and biodiversity recovery.
+## 🧾 **Resources**
 
-Benefits of the Solution
+- [Flutter Docs](https://docs.flutter.dev/)  
+- [Firebase Docs](https://firebase.google.com/docs)  
+- [Ethereum Developer Portal](https://ethereum.org/en/developers/)  
+- [Google Cloud Docs](https://cloud.google.com/docs)  
 
-Accessibility: Simple mobile app for NGOs and communities.
+---
 
-Efficiency: AI validation accelerates project approval.
+## 💚 **Acknowledgement**
 
-Transparency: Blockchain ensures data integrity.
+**CarbonChain** is a **Smart India Hackathon 2025** project conceptualized to support India’s climate and sustainability goals through **AI and Blockchain-based blue carbon restoration.**
 
-Economic Value: Generates income for local communities.
-
-Sustainability: Hybrid storage cuts cost and improves scalability.
-
-📊 Feasibility and Viability
-
-Feasibility: Technically sound integration of AI and blockchain.
-
-Challenges: Blockchain adoption, connectivity issues, media storage cost.
-
-Mitigation: Training sessions, offline-first app design, IPFS hybrid approach.
-
-Value Proposition: Transparent carbon credit registry that empowers coastal communities and supports India’s climate goals.
-
-🔮 Future Scope
-
-Integration with Climate Warehouse / Verra for international credit registry compliance.
-
-Expansion to pan-India coastal regions for large-scale restoration monitoring.
-
-AI optimization for carbon estimation accuracy.
-
-Partnerships with NGOs and research bodies for real-world deployment.
-
-🧾 Resources
-
-Flutter Docs
-
-Firebase Docs
-
-Ethereum Developer Portal
-
-Google Cloud Docs
-
-💚 Acknowledgement
-
-CarbonChain is a Smart India Hackathon 2025 project conceptualized to support India’s climate commitments through technology-driven blue carbon restoration.
