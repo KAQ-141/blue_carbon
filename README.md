@@ -22,7 +22,7 @@ CarbonChain bridges **field-level participation, scientific verification, and bl
 
 ## 📽️ **Introduction to CarbonChain**
 
-[![Intro to CarbonChain](https://i.postimg.cc/J47DrjVd/Carbon-Chain-Thumbnail.jpg)](https://youtu.be/gH61--pI2jo?feature=shared)  
+[![Intro to CarbonChain](https://i.postimg.cc/05bCWFZ0/Carbon-Chain-Thumbnail.jpg)](https://youtu.be/gH61--pI2jo?feature=shared)  
 *🎥 Click the image above to watch our demo video.*
 
 ---
@@ -195,7 +195,7 @@ flutter run
 
 © 2025 **Team CarbonChain** — All rights reserved.  
 
-This project, **CarbonChain**, including its concept, design, source code, architecture, and associated materials, is the **intellectual property of Team CarbonChain**, developed exclusively for the **Smart India Hackathon 2025**.  
+This project, **CarbonChain**, including its concept, design, source code, architecture, and associated materials, is the **intellectual property of Team Codevengers**, developed exclusively for the **Smart India Hackathon 2025**.  
 
 Unauthorized copying, distribution, or reproduction of any part of this project in any form — including design elements, architecture diagrams, text, or source code — without express written permission from the creators is strictly prohibited.  
 
