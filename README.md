@@ -33,7 +33,7 @@ CarbonChain bridges **field-level participation, scientific verification, and bl
   <img src="https://i.postimg.cc/jqGbSbJB/SDG-13.png" width="180"/>
   <img src="https://i.postimg.cc/MZcwwTX4/SDG-14.jpg" width="180"/>
   <img src="https://i.postimg.cc/y6JKKdkq/SDG-15.jpg" width="180"/>
-  <img src="https://i.postimg.cc/kMVCC4Dp/SDG-17.jpg" width="180"/>
+  <img src="https://i.postimg.cc/RVNrn0cM/SDG-17.png" width="180"/>
 </p>
 
 - **SDG 13 – Climate Action:** Accelerating verified carbon sequestration through blue carbon restoration.  
