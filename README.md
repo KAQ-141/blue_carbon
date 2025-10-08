@@ -193,7 +193,7 @@ flutter run
 
 ## ⚖️ **Intellectual Property & Copyright Notice**
 
-© 2025 **Team CarbonChain** — All rights reserved.  
+© 2025 **Team Codevengers** — All rights reserved.  
 
 This project, **CarbonChain**, including its concept, design, source code, architecture, and associated materials, is the **intellectual property of Team Codevengers**, developed exclusively for the **Smart India Hackathon 2025**.  
 
@@ -202,6 +202,6 @@ Unauthorized copying, distribution, or reproduction of any part of this project 
 The project is protected under applicable **copyright and intellectual property laws**.  
 All logos, names, and materials are property of their respective owners.
 
-**Note:** CarbonChain is an original innovation by Team CarbonChain and must not be replicated, rebranded, or presented as part of another submission, competition, or publication without prior approval.
+**Note:** CarbonChain is an original innovation by Team Codevengers and must not be replicated, rebranded, or presented as part of another submission, competition, or publication without prior approval.
 
 ---
