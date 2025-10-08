@@ -19,7 +19,7 @@ CarbonChain bridges **field-level participation, scientific verification, and bl
 
 ## 📽️ **Introduction to CarbonChain**
 
-[![Intro to CarbonChain](https://i.postimg.cc/Z5rXXsZC/carbonchain-thumb.jpg)](https://youtu.be/your-demo-link-here)  
+[![Intro to CarbonChain](https://i.postimg.cc/J47DrjVd/Carbon-Chain-Thumbnail.jpg)](https://youtu.be/your-demo-link-here)  
 *Click on the image above to watch our video demonstration.*
 
 ---
