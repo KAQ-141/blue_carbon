@@ -80,6 +80,7 @@ flutter run
     </td>
   </tr>
 </table>
+---
 ## ✨ **Highlights**
 
 - 🔗 **Blockchain-powered registry** ensuring tamper-proof and transparent MRV.  
@@ -94,6 +95,7 @@ flutter run
 ## 🧠 **Tech Stack**
 
 ### **Technologies Used**
+
 - **Frameworks:** Flutter, Node.js, Firebase  
 - **Blockchain:** Ethereum (Sepolia testnet), Smart Contracts (Solidity)  
 - **AI/ML:** YOLOv8, Gemini API, OpenCV for image analysis  
@@ -101,7 +103,14 @@ flutter run
 - **Cloud:** Google Cloud Platform (GCP)  
 - **Integration:** REST APIs, WebSockets, MetaMask  
 
+<p align="center">
+  <img src="https://i.postimg.cc/QdtXPbLJ/Screenshot-2025-10-08-162421.png" width="750"/>
+  <br>
+  <em>Architecture & Technology Stack of CarbonChain</em>
+</p>
+
 ---
+
 
 ## 🧩 **CarbonChain System Overview**
 
@@ -180,3 +189,19 @@ flutter run
 
 **CarbonChain** is a **Smart India Hackathon 2025** project conceptualized to support India’s climate and sustainability goals through **AI and Blockchain-based blue carbon restoration.**
 
+---
+
+## ⚖️ **Intellectual Property & Copyright Notice**
+
+© 2025 **Team CarbonChain** — All rights reserved.  
+
+This project, **CarbonChain**, including its concept, design, source code, architecture, and associated materials, is the **intellectual property of Team CarbonChain**, developed exclusively for the **Smart India Hackathon 2025**.  
+
+Unauthorized copying, distribution, or reproduction of any part of this project in any form — including design elements, architecture diagrams, text, or source code — without express written permission from the creators is strictly prohibited.  
+
+The project is protected under applicable **copyright and intellectual property laws**.  
+All logos, names, and materials are property of their respective owners.
+
+**Note:** CarbonChain is an original innovation by Team CarbonChain and must not be replicated, rebranded, or presented as part of another submission, competition, or publication without prior approval.
+
+---
