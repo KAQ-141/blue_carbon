@@ -56,35 +56,28 @@ flutter run
 
 ### **Walkthrough**
 
-<table style="width: 100%;">
-  <tr>
-    <td align="center" width="25%">
-      <img src="https://i.postimg.cc/vH43fqB9/CC-Splash-Screen.jpg" width="120"/><br>
-      <b>Splash Screen</b><br>
-      The Splash Screen on Carbon Chain Mobile App
-    </td>
-    <td align="center" width="25%">
-      <img src="https://i.postimg.cc/YqvbYn9Y/CC-Role-Slect.jpg" width="120"/><br>
-      <b>Login Screen</b><br>
-      Role-based login for NGOs, NCCR admins, and investors via Firebase authentication.
-    </td>
-    <td align="center" width="25%">
-      <img src="https://i.postimg.cc/HsrBXZxM/CC-upload-screen.jpg" width="120"/><br>
-      <b>Data Upload Screen</b><br>
-      NGOs can upload geo-tagged photos, videos, and restoration data for verification.
-    </td>
-    <td align="center" width="25%">
-      <img src="https://i.postimg.cc/NfKpmJMR/CC-AI-dashboard.jpg" width="120"/><br>
-      <b>AI Validation Dashboard</b><br>
-      Real-time validation using satellite imagery and anomaly detection.
-    </td>
-    <td align="center" width="25%">
-      <img src="https://i.postimg.cc/658Ynj3r/CC-Marketplace.jpg" width="120"/><br>
-      <b>Marketplace</b><br>
-      Corporates can browse, verify, and purchase tokenized carbon credits.
-    </td>
-  </tr>
-</table>
+<p align="center">
+  <img src="https://i.postimg.cc/vH43fqB9/CC-Splash-Screen.jpg" width="120" />
+  <img src="https://i.postimg.cc/YqvbYn9Y/CC-Role-Slect.jpg" width="120" />
+  <img src="https://i.postimg.cc/HsrBXZxM/CC-upload-screen.jpg" width="120" />
+  <img src="https://i.postimg.cc/NfKpmJMR/CC-AI-dashboard.jpg" width="120" />
+  <img src="https://i.postimg.cc/658Ynj3r/CC-Marketplace.jpg" width="120" />
+</p>
+
+<p align="center">
+  <b>Splash Screen</b> &nbsp; | &nbsp;
+  <b>Login Screen</b> &nbsp; | &nbsp;
+  <b>Data Upload Screen</b> &nbsp; | &nbsp;
+  <b>AI Validation Dashboard</b> &nbsp; | &nbsp;
+  <b>Marketplace</b>
+</p>
+
+<p align="center">
+  The Carbon Chain Mobile App provides role-based access for NGOs, admins, and investors.  
+  It enables photo/video uploads for project verification, AI-powered validation dashboards,  
+  and a marketplace for purchasing tokenized carbon credits.
+</p>
+
 ---
 ## ✨ **Highlights**
 
