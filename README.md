@@ -111,7 +111,7 @@ flutter run
 - **Integration:** REST APIs, WebSockets, MetaMask  
 
 <p align="center">
-  <img src="https://i.postimg.cc/QdtXPbLJ/Screenshot-2025-10-08-162421.png"/>
+  <img src="https://i.postimg.cc/QdtXPbLJ/Carbon-Chain-Tech-Stack.png"/>
   <br>
   <em>Architecture & Technology Stack of CarbonChain</em>
 </p>
